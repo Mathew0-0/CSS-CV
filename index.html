@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Stars background -->
+  <div id="stars"></div>
+
   <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
@@ -50,71 +53,17 @@
 
   <!-- Experience -->
   <section>
-  <h3>Experience</h3>
-  <div class="experience">
-    <div class="job">
-      <h4>Cheung Keung Holding <span>– Seasonal Accountant</span></h4>
-      <p class="date">Summers 2019 – 2024 · Atlanta, GA</p>
-      <ul>
-        <li>Maintained financial records: deposits, bank calls, reconciliations.</li>
-        <li>Automated invoices using Python and Excel.</li>
-        <li>Oversaw cash flow during COVID ensuring accuracy and timely reporting.</li>
-      </ul>
+    <h3>Experience</h3>
+    <div class="experience">
+      <!-- jobs ... -->
     </div>
-
-    <div class="job">
-      <h4>Kumon Learning Center <span>– K-12 Tutor</span></h4>
-      <p class="date">Jan. 2022 – Jan. 2023 · Johns Creek, GA</p>
-      <ul>
-        <li>Tutored math and reading (K-12 through Calculus).</li>
-        <li>Improved student scores by adjusting worksheets.</li>
-        <li>Reported progress to parents and reinforced study habits.</li>
-      </ul>
-    </div>
-
-    <div class="job">
-      <h4>Rakkan Ramen <span>– Line Cook / Relief Head Chef</span></h4>
-      <p class="date">May 2023 – Jan. 2025 · Johns Creek, GA</p>
-      <ul>
-        <li>Coordinated kitchen during peak dinner rushes (+150 covers).</li>
-        <li>Trained new staff and enforced food safety compliance.</li>
-        <li>Maintained plating consistency and reduced onboarding time.</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Projects -->
   <section>
     <h3>Projects</h3>
     <div class="three-col">
-      <div class="card">
-        <h3>Online Resale Operation</h3>
-        <img src="images/project1.png" alt="Online Resale Project">
-        <ul>
-          <li>Resold apparel/electronics via Poshmark, eBay, Facebook.</li>
-          <li>Generated $10K+ profit by sourcing undervalued items.</li>
-          <li>Optimized pricing, turnover, and tracked metrics.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Biometric Database Access Tool</h3>
-        <img src="images/project2.png" alt="Biometric Project">
-        <ul>
-          <li>Created self-authentication GUI with Python, SQL, Tkinter, OpenCV.</li>
-          <li>Used hair/eye color, skin tone, facial geometry for database validation.</li>
-          <li>Built Python + SQL backend for attribute storage.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <img src="images/project3.png" alt="Portfolio Website">
-        <ul>
-          <li>Developed responsive portfolio using HTML, CSS, and JavaScript.</li>
-          <li>Deployed via GitHub Pages with CI/CD workflow.</li>
-          <li>Integrated contact form with formsubmit.co for messaging.</li>
-        </ul>
-      </div>
+      <!-- cards ... -->
     </div>
   </section>
 
@@ -124,10 +73,6 @@
     <ul>
       <li>Programming: Python, SQL, Java, HTML/CSS, JavaScript</li>
       <li>Data & Analytics: Excel (Pivot, Lookups), pandas, NumPy, Tableau, Power BI</li>
-      <li>Quantitative: STAT 4210, MATH 2250-2700</li>
-      <li>Risk & Finance: Cash flow tracking, variance, underwriting, exposure</li>
-      <li>Tools: Git, Linux, OpenCV, Jenkins, WordPress</li>
-      <li>Languages: English (Proficient), Fuzhounese, Cantonese, Mandarin</li>
       <li>More on my <a href="https://github.com/Mathew0-0" target="_blank">GitHub</a></li>
     </ul>
   </section>
@@ -135,13 +80,7 @@
   <!-- Leadership -->
   <section>
     <h3>Leadership / Extracurricular</h3>
-    <dl>
-      <dt>Asian American Student Association – Service Committee Member</dt>
-      <dd>2023 – 2024, Georgia State University</dd>
-      <ul>
-        <li>Contributed to combined 200+ service hours.</li>
-      </ul>
-    </dl>
+    <!-- leadership content -->
   </section>
 
   <!-- Footer -->
@@ -151,5 +90,15 @@
       <img src="images/image.png" alt="LinkedIn" height="25">
     </a></p>
   </footer>
+
+  <!-- Parallax script -->
+  <script>
+    document.addEventListener("mousemove", (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      document.getElementById("stars").style.transform = `translate(${x}px, ${y}px)`;
+    });
+  </script>
 </body>
 </html>
+
